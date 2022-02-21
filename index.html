@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>URNA ELETRONICA: NICOLAS ROMANCINI</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="scratch_1.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="developerName"> BY: NICOLAS ROMANCINI</div>
+<div id="resultTest"></div>
+    <div class="orgbutton">
+        <button class="recomecarUrnacss" onclick="recomecarUrna()">RECOMECAR</button>
+        <button class="resultado" onclick="resultado()">RESULTADO</button>
+        <button class="reiniciartudo" style="width: 120px;" onclick="location.reload()">ZERAR</button>
+    </div>
+
+  <div class="spacebutton"></div>
+
+
+<!--
+                                            ////////||||||||||||\\\\\\\\
+                                           ////////  URN DISPLAY \\\\\\\\
+                                          /////////||||||||||||||\\\\\\\\\
+-->
+
+<div class="urn">
+
+    <!--
+                                             ////////||||||||||||\\\\\\\\
+                                            ////////DISPLAY  PRINT\\\\\\\\
+                                           /////////||||||||||||||\\\\\\\\\
+-->
+    <div class="display">
+
+        <div class="structure-1">
+
+            <div class="structure-1-left">
+
+                <div class="structure-1-1">
+
+                    <span>Vote para:</span>
+
+                </div>
+
+                <div class="structure-1-2">
+
+                    <span>DEPUTADO FEDERAL</span>
+
+                </div>
+
+                <div class="structure-1-3">
+
+                    <div class="number flashes"></div> <!-- criando os numeros que vai ser printado nos blocos do voto -->
+                    <div class="number"></div>
+
+                </div>
+
+                <div class="structure-1-4">
+                    ...fsadfsdfsdf
+                </div>
+
+            </div>
+
+            <div class="structure-1-right">
+
+                <div class="structure-1-image">
+
+                  <!--  <img src="imagens/11.jpg" alt="" /> -->
+
+                </div>
+<!--                <div class="structure-1-image small">-->
+
+<!--                    <img src="imagens/11.jpg" alt="" />-->
+<!--                    Teste-->
+<!--                </div>-->
+
+            </div>
+
+        </div>
+
+        <div class="structure-2">
+            Pressione a tecla: <br>
+            Aperte CONFIRMA para confirmar o voto <br>
+            Aperte CORRIGE para corrigir o voto
+        </div>
+
+    </div>
+
+
+    <!--
+                                                 ////////||||||||||||\\\\\\\\
+                                                //////// URN KEYBOARD \\\\\\\\
+                                               /////////||||||||||||||\\\\\\\\\
+   -->
+
+    <div class="left">
+
+        <div class="keyboard">
+
+            <div class="keyspace">
+                <button class="button" onclick="inserir('1')">1</button>
+                <button class="button" onclick="inserir('2')">2</button>
+                <button class="button" onclick="inserir('3')">3</button>
+            </div>
+
+            <div class="keyspace">
+                <button class="button" onclick="inserir('4')">4</button>
+                <button class="button" onclick="inserir('5')">5</button>
+                <button class="button" onclick="inserir('6')">6</button>
+            </div>
+
+            <div class="keyspace">
+                <button class="button" onclick="inserir('7')">7</button>
+                <button class="button" onclick="inserir('8')">8</button>
+                <button class="button" onclick="inserir('9')">9</button>
+            </div>
+
+            <div class="keyspace">
+                <button class="button" onclick="inserir('0')">0</button>
+            </div>
+
+            <div class="keyspace">
+                <button class="button buttonwhite" onclick="branco()">BRANCO</button>
+                <button class="button buttonred" onclick="corrige()">CORRIGE</button>
+                <button class="button buttongreen" onclick="votar()">CONFIRMA</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+<script src="etapadevotacao.js"></script>
+<script src="script1.js"></script>
+<script>comecarEtapas()</script>
+</html>
